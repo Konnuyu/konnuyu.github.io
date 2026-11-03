@@ -1,35 +1,439 @@
+Here is a complete HTML + CSS landing page for the spaceguard macOS menu-bar app, optimized for a smooth download experience and clear feature discovery.
+```html
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>rackscape</title>
-<link rel="stylesheet" href="style.css">
+<title>spaceguard — Free Up Disk Space on Mac Automatically</title>
+<meta name="description" content="spaceguard is a macOS menu-bar app that watches your free disk space and automatically cleans stale developer caches, iOS simulator runtimes and coding-agent worktrees from Claude Code, Codex and Cursor.">
+<meta name="keywords" content="claude-code, cleanup, codex, developer-tools, disk-space, git-worktree, ios-simulator, macos, menubar-app, swift, swiftui, xcode">
+<meta name="author" content="spaceguard">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/Konnuyu/spaceguard">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="spaceguard">
+<meta property="og:title" content="spaceguard — Free Up Disk Space on Mac Automatically">
+<meta property="og:description" content="A tiny menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees so your Mac never fills up again.">
+<meta property="og:url" content="https://github.com/Konnuyu/spaceguard">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="spaceguard — Free Up Disk Space on Mac Automatically">
+<meta name="twitter:description" content="A tiny menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "spaceguard",
+  "operatingSystem": "macOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "macOS menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees (Claude Code, Codex, Cursor).",
+  "downloadUrl": "https://github.com/Konnuyu/spaceguard/releases",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+  body {
+    margin: 0;
+    background: #f6f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2430;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { line-height: 1.25; }
+  a { color: #4338ca; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 26px;
+    box-shadow: 0 4px 18px rgba(23, 28, 45, 0.06);
+    margin-bottom: 22px;
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 48px; }
+    .card { padding: 20px 18px; border-radius: 14px; }
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 21px !important; }
+  }
+</style>
 </head>
 <body>
-<header>
-  <img class="logo" src="assets/logo-header.jpg" alt="rackscape">
-  <nav>
-    <a href="index.html">top</a>
-    <a href="share.html">rackscape share</a>
-    <a href="studio.html">rackscape studio</a>
-  </nav>
-</header>
-<main>
-  <img class="logo" src="assets/logo-header.jpg" alt="rackscape"width="auto" height="40pt">
-  <p class="lead">rackscapeは、いろんな人の棚の風景を紹介する「rackscape share」と、その棚の中身を紹介する「rackscape studio」の、2つのページからなるサイトです。</p>
+<div class="wrap">
 
-  <img class="logo" src="assets/banner-share.jpeg" alt="rackscape share"width="auto" height="40pt">
-  <p class="lead">いろんな人の棚の風景を紹介するコミュニティページ。<a href="share.html">rackscape share →</a></p> 
-  
-  <img class="logo" src="assets/banner-studio.jpeg" alt="rackscape studio"width="auto" height="40pt">
-  <p class="lead">棚の中身の機材や本の紹介。<a href="studio.html">rackscape studio →</a></p>
+  <header class="card" style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #ec4899 100%); color: #ffffff; text-align: center; padding: 44px 26px;">
+    <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85;">macOS menu-bar utility</p>
+    <h1 style="margin: 0 0 14px; font-size: 38px; font-weight: 800; letter-spacing: -0.5px;">💾 spaceguard — Never Run Out of Disk Space Again</h1>
+    <p style="margin: 0 auto 26px; max-width: 620px; font-size: 17px; opacity: 0.95;">
+      spaceguard sits quietly in your menu bar, keeps an eye on how much room is left on your Mac, and clears out the clutter that quietly piles up — old developer caches, leftover iPhone simulator versions and abandoned coding-agent worktrees from Claude Code, Codex and Cursor.
+    </p>
+    <a href="https://github.com/Konnuyu/spaceguard/releases"
+       style="display: inline-block; padding: 16px 34px; border-radius: 999px; background: linear-gradient(90deg, #22d3ee 0%, #a3e635 50%, #facc15 100%); color: #10202b; font-size: 17px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);">
+      ⬇️ Get spaceguard
+    </a>
+    <p style="margin: 16px 0 0; font-size: 13px; opacity: 0.85;">Free to download · open the releases page to get the latest version</p>
+  </header>
 
-  <h2>What's New</h2>
-  <ul class="news" id="whats-new"></ul>
-</main>
-<footer>© rackscape</footer>
-<script src="data.js"></script>
-<script src="render.js"></script>
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🧭 What spaceguard Does</h2>
+    <p style="margin: 0 0 14px;">
+      Your Mac has a fixed amount of storage. Every day you use it, small things add up: temporary files from building software, downloaded simulator versions for iPhone and iPad testing, and leftover copies of project folders created automatically by AI coding assistants. Individually these are tiny. Together they can eat tens of gigabytes — and you usually find out only when your Mac warns you that the startup disk is almost full.
+    </p>
+    <p style="margin: 0 0 14px;">
+      spaceguard changes that. It lives in your menu bar at the top of the screen, so it is always running but never in the way. It checks your free space on a regular basis and shows the number at a glance. When storage drops below the level you choose, it identifies the safe-to-delete items and clears them out for you.
+    </p>
+    <p style="margin: 0;">
+      No terminal windows. No commands to memorise. No hunting through hidden folders. One click in the menu bar, and the space comes back.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">✨ Key Features</h2>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">📊 Live free-space monitoring</h3>
+    <p style="margin: 0 0 14px;">A small readout in the menu bar shows how much room is left at all times. Open the panel for a simple breakdown of what is using the most space.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🧽 Automatic cleaning of stale dev caches</h3>
+    <p style="margin: 0 0 14px;">Build systems and package managers keep copies of downloaded and compiled files to speed things up. Many of those copies are never used again. spaceguard finds the ones that have gone stale and removes them, freeing space without touching your projects or your work.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">📱 Old simulator runtimes</h3>
+    <p style="margin: 0 0 14px;">Testing an iPhone or iPad app stores a full operating-system image for each simulator version you install. Old versions can sit there for years taking up several gigabytes each. spaceguard spots the ones that are out of date or unused and offers to remove them.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🤖 Coding-agent worktrees</h3>
+    <p style="margin: 0 0 14px;">AI coding tools such as Claude Code, Codex and Cursor often create temporary working copies of your code so they can experiment without disturbing your main folder. When a session ends, those copies can be left behind. spaceguard identifies the abandoned ones and cleans them up, keeping the ones that are still active.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🎚️ You stay in control</h3>
+    <p style="margin: 0 0 14px;">Choose how much free space you want to keep protected. Choose whether spaceguard cleans automatically or simply tells you when it is time. Every action is reported in plain language, so you always know what changed.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🍃 Light on resources</h3>
+    <p style="margin: 0 0 14px;">spaceguard is a native Mac application built with Swift and SwiftUI. It uses almost no memory and does not slow your Mac down while it waits in the background.</p>
+  </section>
+
+  <section class="card" style="border: 2px solid #e0e7ff;">
+    <h2 style="margin-top: 0; font-size: 26px;">🚀 Getting Started</h2>
+    <p style="margin: 0 0 18px;">
+      Getting spaceguard onto your computer takes a minute and does not require any technical knowledge. Follow the three short steps below.
+    </p>
+
+    <p style="margin: 0 0 18px; text-align: center;">
+      <a href="https://github.com/Konnuyu/spaceguard/releases"
+         style="display: inline-block; padding: 16px 34px; border-radius: 12px; background: linear-gradient(135deg, #f97316 0%, #ef4444 55%, #db2777 100%); color: #ffffff; font-size: 17px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 20px rgba(219, 39, 119, 0.32);">
+        ⬇️ Download spaceguard
+      </a>
+    </p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 1 — Visit this link to download the application</h3>
+    <p style="margin: 0 0 14px;">Click the button above, or go to <a href="https://github.com/Konnuyu/spaceguard/releases">https://github.com/Konnuyu/spaceguard/releases</a> in your web browser. Visit this link to download the application.</p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 2 — Choose the newest version</h3>
+    <p style="margin: 0 0 14px;">The page lists every version of spaceguard ever published, newest at the top. Pick the entry marked as the latest release and open it. You will see the files that belong to that version listed underneath.</p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 3 — Open the app</h3>
+    <p style="margin: 0 0 14px;">Save the file to your computer, then open it from your Downloads folder. spaceguard will start and place its icon in the menu bar at the top of your screen. Click that icon to see your free space and begin cleaning.</p>
+
+    <p style="margin: 0; padding: 14px 16px; background: #f1f5ff; border-left: 4px solid #4f46e5; border-radius: 8px; font-size: 15px;">
+      💡 If your Mac shows a message the first time you open a new app, that is normal for software downloaded from the internet. Confirm that you want to open it, and spaceguard will start.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🧹 What Gets Cleaned</h2>
+    <p style="margin: 0 0 14px;">spaceguard is deliberately narrow in what it touches. It only looks after the categories below — the ones that grow without limits and the ones you are least likely to miss.</p>
+    <ul style="margin: 0 0 14px; padding-left: 22px;">
+      <li style="margin-bottom: 8px;"><strong>Stale developer caches</strong> — temporary build files, downloaded packages and compiled artefacts that have not been used recently.</li>
+      <li style="margin-bottom: 8px;"><strong>Outdated simulator runtimes</strong> — old iPhone and iPad system images that are no longer needed for testing.</li>
+      <li style="margin-bottom: 8px;"><strong>Abandoned coding-agent worktrees</strong> — temporary project copies left behind by Claude Code, Codex and Cursor after a session ends.</li>
+      <li style="margin-bottom: 8px;"><strong>Loose temporary files</strong> — leftover scraps created during normal everyday use.</li>
+    </ul>
+    <p style="margin: 0;">Your documents, photos, applications, music and personal files are never part of the cleanup. spaceguard does not touch them.</p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🛡️ Is It Safe?</h2>
+    <p style="margin: 0 0 14px;">
+      Yes. Every item spaceguard removes is a duplicate, a cache or an abandoned leftover — something that can be regenerated automatically the next time it is needed. Nothing is deleted permanently: items you clean are moved to the Mac Trash, so if something ever looks wrong you can put it straight back.
+    </p>
+    <p style="margin: 0 0 14px;">
+      You also decide how much space should always stay free. If a cleanup would take you below that limit, spaceguard stops rather than clearing more.
+    </p>
+    <p style="margin: 0;">
+      Before anything is removed, you can review the list. Nothing happens silently behind your back.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">💡 Tips for Best Results</h2>
+    <ul style="margin: 0; padding-left: 22px;">
+      <li style="margin-bottom: 8px;">Leave spaceguard running in the menu bar so it can spot growth early, before it becomes a problem.</li>
+      <li style="margin-bottom: 8px;">Run a cleanup after finishing a big project or after a long session with an AI coding assistant — that is when the most leftovers pile up.</li>
+      <li style="margin-bottom: 8px;">Set your protected free-space limit generously. Keeping a comfortable buffer gives your Mac room to breathe and stay fast.</li>
+      <li style="margin-bottom: 8px;">Check the panel occasionally. Seeing where your space goes helps you decide what to keep and what to let go.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">❓ Frequently Asked Questions</h2>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Do I need to know anything about programming?</h3>
+    <p style="margin: 0 0 14px;">No. spaceguard was made for people who simply want their computer to keep working without storage warnings. Everything is done through the menu bar with ordinary clicks.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Will it delete my files or projects?</h3>
+    <p style="margin: 0 0 14px;">No. It only clears temporary and abandoned items, and it moves them to the Trash rather than erasing them outright. Your personal files and working projects stay exactly where they are.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Does it slow my computer down?</h3>
+    <p style="margin: 0 0 14px;">No. spaceguard rests quietly in the menu bar and only becomes active when it checks your free space or runs a cleanup.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">How often should I clean?</h3>
+    <p style="margin: 0 0 14px;">As often as you like. Many people let spaceguard handle it automatically and only glance at the menu bar number. Others prefer to press the button themselves once a month.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Where do I get the newest version?</h3>
+    <p style="margin: 0;">Always from the releases page: <a href="https://github.com/Konnuyu/spaceguard/releases">https://github.com/Konnuyu/spaceguard/releases</a>. Visit this link to download the application.</p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🆘 Getting Help</h2>
+    <p style="margin: 0 0 14px;">
+      If something does not look right, open an issue on the repository and describe what you saw. Include the version of spaceguard you are using and what your menu bar showed at the time — that is usually enough to work out what happened.
+    </p>
+    <p style="margin: 0;">
+      Feature ideas are welcome too. If there is a type of clutter spaceguard should learn to clean, say so.
+    </p>
+  </section>
+
+  <footer style="text-align: center; padding: 26px 10px 0; color: #6b7280; font-size: 14px;">
+    <p style="margin: 0 0 12px;">
+      <a href="https://github.com/Konnuyu/spaceguard/releases"
+         style="display: inline-block; padding: 13px 28px; border-radius: 999px; background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%); color: #ffffff; font-weight: 700; text-decoration: none; box-shadow: 0 6px 16px rgba(79, 70, 229, 0.28);">
+        ⬇️ Open the download page
+      </a>
+    </p>
+    <p style="margin: 0;">spaceguard · a menu-bar app for macOS · built with Swift and SwiftUI</p>
+  </footer>
+
+</div>
+</body>
+</html>
+```
+### Design Highlights for a Menu-Bar Utility
+
+The page mirrors the lightweight, no-fuss spirit of a menu-bar app, turning a technical utility into a friendly download experience.
+
+The top banner immediately establishes trust with a bold gradient from deep indigo through violet to pink, while the bright lime-to-cyan download button creates a strong visual anchor. This single focal point keeps the primary action unmissable, even on first glance.
+
+Generous white space and soft, rounded cards give the layout an airy, approachable feel. Each feature and FAQ section sits in its own subtle card with a faint shadow, making the content easy to scan. Typography stays crisp and legible, with clear hierarchy between headings and body copy.
+
+The recurring pill-shaped buttons and gentle<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spaceguard — Free Up Disk Space on Mac Automatically</title>
+<meta name="description" content="spaceguard is a macOS menu-bar app that watches your free disk space and automatically cleans stale developer caches, iOS simulator runtimes and coding-agent worktrees from Claude Code, Codex and Cursor.">
+<meta name="keywords" content="claude-code, cleanup, codex, developer-tools, disk-space, git-worktree, ios-simulator, macos, menubar-app, swift, swiftui, xcode">
+<meta name="author" content="spaceguard">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://github.com/Konnuyu/spaceguard">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="spaceguard">
+<meta property="og:title" content="spaceguard — Free Up Disk Space on Mac Automatically">
+<meta property="og:description" content="A tiny menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees so your Mac never fills up again.">
+<meta property="og:url" content="https://github.com/Konnuyu/spaceguard">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="spaceguard — Free Up Disk Space on Mac Automatically">
+<meta name="twitter:description" content="A tiny menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "spaceguard",
+  "operatingSystem": "macOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "macOS menu-bar app that watches free disk space and cleans stale dev caches, simulator runtimes and coding-agent worktrees (Claude Code, Codex, Cursor).",
+  "downloadUrl": "https://github.com/Konnuyu/spaceguard/releases",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+  body {
+    margin: 0;
+    background: #f6f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2430;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { line-height: 1.25; }
+  a { color: #4338ca; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 26px;
+    box-shadow: 0 4px 18px rgba(23, 28, 45, 0.06);
+    margin-bottom: 22px;
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 48px; }
+    .card { padding: 20px 18px; border-radius: 14px; }
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 21px !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="card" style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #ec4899 100%); color: #ffffff; text-align: center; padding: 44px 26px;">
+    <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85;">macOS menu-bar utility</p>
+    <h1 style="margin: 0 0 14px; font-size: 38px; font-weight: 800; letter-spacing: -0.5px;">💾 spaceguard - Never Run Out of Disk Space Again</h1>
+    <p style="margin: 0 auto 26px; max-width: 620px; font-size: 17px; opacity: 0.95;">
+      spaceguard sits quietly in your menu bar, keeps an eye on how much room is left on your Mac, and clears out the clutter that quietly piles up — old developer caches, leftover iPhone simulator versions and abandoned coding-agent worktrees from Claude Code, Codex and Cursor.
+    </p>
+    <a href="https://github.com/Konnuyu/spaceguard/releases"
+       style="display: inline-block; padding: 16px 34px; border-radius: 999px; background: linear-gradient(90deg, #22d3ee 0%, #a3e635 50%, #facc15 100%); color: #10202b; font-size: 17px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);">
+      ⬇️ Get spaceguard
+    </a>
+    <p style="margin: 16px 0 0; font-size: 13px; opacity: 0.85;">Free to download · open the releases page to get the latest version</p>
+  </header>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🧭 What spaceguard Does</h2>
+    <p style="margin: 0 0 14px;">
+      Your Mac has a fixed amount of storage. Every day you use it, small things add up: temporary files from building software, downloaded simulator versions for iPhone and iPad testing, and leftover copies of project folders created automatically by AI coding assistants. Individually these are tiny. Together they can eat tens of gigabytes — and you usually find out only when your Mac warns you that the startup disk is almost full.
+    </p>
+    <p style="margin: 0 0 14px;">
+      spaceguard changes that. It lives in your menu bar at the top of the screen, so it is always running but never in the way. It checks your free space on a regular basis and shows the number at a glance. When storage drops below the level you choose, it identifies the safe-to-delete items and clears them out for you.
+    </p>
+    <p style="margin: 0;">
+      No terminal windows. No commands to memorise. No hunting through hidden folders. One click in the menu bar, and the space comes back.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">✨ Key Features</h2>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">📊 Live free-space monitoring</h3>
+    <p style="margin: 0 0 14px;">A small readout in the menu bar shows how much room is left at all times. Open the panel for a simple breakdown of what is using the most space.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🧽 Automatic cleaning of stale dev caches</h3>
+    <p style="margin: 0 0 14px;">Build systems and package managers keep copies of downloaded and compiled files to speed things up. Many of those copies are never used again. spaceguard finds the ones that have gone stale and removes them, freeing space without touching your projects or your work.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">📱 Old simulator runtimes</h3>
+    <p style="margin: 0 0 14px;">Testing an iPhone or iPad app stores a full operating-system image for each simulator version you install. Old versions can sit there for years taking up several gigabytes each. spaceguard spots the ones that are out of date or unused and offers to remove them.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🤖 Coding-agent worktrees</h3>
+    <p style="margin: 0 0 14px;">AI coding tools such as Claude Code, Codex and Cursor often create temporary working copies of your code so they can experiment without disturbing your main folder. When a session ends, those copies can be left behind. spaceguard identifies the abandoned ones and cleans them up, keeping the ones that are still active.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🎚️ You stay in control</h3>
+    <p style="margin: 0 0 14px;">Choose how much free space you want to keep protected. Choose whether spaceguard cleans automatically or simply tells you when it is time. Every action is reported in plain language, so you always know what changed.</p>
+
+    <h3 style="font-size: 18px; margin: 18px 0 6px;">🍃 Light on resources</h3>
+    <p style="margin: 0 0 14px;">spaceguard is a native Mac application built with Swift and SwiftUI. It uses almost no memory and does not slow your Mac down while it waits in the background.</p>
+  </section>
+
+  <section class="card" style="border: 2px solid #e0e7ff;">
+    <h2 style="margin-top: 0; font-size: 26px;">🚀 Getting Started</h2>
+    <p style="margin: 0 0 18px;">
+      Getting spaceguard onto your computer takes a minute and does not require any technical knowledge. Follow the three short steps below.
+    </p>
+
+    <p style="margin: 0 0 18px; text-align: center;">
+      <a href="https://github.com/Konnuyu/spaceguard/releases"
+         style="display: inline-block; padding: 16px 34px; border-radius: 12px; background: linear-gradient(135deg, #f97316 0%, #ef4444 55%, #db2777 100%); color: #ffffff; font-size: 17px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 20px rgba(219, 39, 119, 0.32);">
+        ⬇️ Download spaceguard
+      </a>
+    </p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 1 — Visit this link to download the application</h3>
+    <p style="margin: 0 0 14px;">Click the button above, or go to <a href="https://github.com/Konnuyu/spaceguard/releases">https://github.com/Konnuyu/spaceguard/releases</a> in your web browser. Visit this link to download the application.</p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 2 — Choose the newest version</h3>
+    <p style="margin: 0 0 14px;">The page lists every version of spaceguard ever published, newest at the top. Pick the entry marked as the latest release and open it. You will see the files that belong to that version listed underneath.</p>
+
+    <h3 style="font-size: 18px; margin: 22px 0 6px;">Step 3 — Open the app</h3>
+    <p style="margin: 0 0 14px;">Save the file to your computer, then open it from your Downloads folder. spaceguard will start and place its icon in the menu bar at the top of your screen. Click that icon to see your free space and begin cleaning.</p>
+
+    <p style="margin: 0; padding: 14px 16px; background: #f1f5ff; border-left: 4px solid #4f46e5; border-radius: 8px; font-size: 15px;">
+      💡 If your Mac shows a message the first time you open a new app, that is normal for software downloaded from the internet. Confirm that you want to open it, and spaceguard will start.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🧹 What Gets Cleaned</h2>
+    <p style="margin: 0 0 14px;">spaceguard is deliberately narrow in what it touches. It only looks after the categories below — the ones that grow without limits and the ones you are least likely to miss.</p>
+    <ul style="margin: 0 0 14px; padding-left: 22px;">
+      <li style="margin-bottom: 8px;"><strong>Stale developer caches</strong> — temporary build files, downloaded packages and compiled artefacts that have not been used recently.</li>
+      <li style="margin-bottom: 8px;"><strong>Outdated simulator runtimes</strong> — old iPhone and iPad system images that are no longer needed for testing.</li>
+      <li style="margin-bottom: 8px;"><strong>Abandoned coding-agent worktrees</strong> — temporary project copies left behind by Claude Code, Codex and Cursor after a session ends.</li>
+      <li style="margin-bottom: 8px;"><strong>Loose temporary files</strong> — leftover scraps created during normal everyday use.</li>
+    </ul>
+    <p style="margin: 0;">Your documents, photos, applications, music and personal files are never part of the cleanup. spaceguard does not touch them.</p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🛡️ Is It Safe?</h2>
+    <p style="margin: 0 0 14px;">
+      Yes. Every item spaceguard removes is a duplicate, a cache or an abandoned leftover — something that can be regenerated automatically the next time it is needed. Nothing is deleted permanently: items you clean are moved to the Mac Trash, so if something ever looks wrong you can put it straight back.
+    </p>
+    <p style="margin: 0 0 14px;">
+      You also decide how much space should always stay free. If a cleanup would take you below that limit, spaceguard stops rather than clearing more.
+    </p>
+    <p style="margin: 0;">
+      Before anything is removed, you can review the list. Nothing happens silently behind your back.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">💡 Tips for Best Results</h2>
+    <ul style="margin: 0; padding-left: 22px;">
+      <li style="margin-bottom: 8px;">Leave spaceguard running in the menu bar so it can spot growth early, before it becomes a problem.</li>
+      <li style="margin-bottom: 8px;">Run a cleanup after finishing a big project or after a long session with an AI coding assistant — that is when the most leftovers pile up.</li>
+      <li style="margin-bottom: 8px;">Set your protected free-space limit generously. Keeping a comfortable buffer gives your Mac room to breathe and stay fast.</li>
+      <li style="margin-bottom: 8px;">Check the panel occasionally. Seeing where your space goes helps you decide what to keep and what to let go.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">❓ Frequently Asked Questions</h2>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Do I need to know anything about programming?</h3>
+    <p style="margin: 0 0 14px;">No. spaceguard was made for people who simply want their computer to keep working without storage warnings. Everything is done through the menu bar with ordinary clicks.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Will it delete my files or projects?</h3>
+    <p style="margin: 0 0 14px;">No. It only clears temporary and abandoned items, and it moves them to the Trash rather than erasing them outright. Your personal files and working projects stay exactly where they are.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Does it slow my computer down?</h3>
+    <p style="margin: 0 0 14px;">No. spaceguard rests quietly in the menu bar and only becomes active when it checks your free space or runs a cleanup.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">How often should I clean?</h3>
+    <p style="margin: 0 0 14px;">As often as you like. Many people let spaceguard handle it automatically and only glance at the menu bar number. Others prefer to press the button themselves once a month.</p>
+
+    <h3 style="font-size: 17px; margin: 18px 0 6px;">Where do I get the newest version?</h3>
+    <p style="margin: 0;">Always from the releases page: <a href="https://github.com/Konnuyu/spaceguard/releases">https://github.com/Konnuyu/spaceguard/releases</a>. Visit this link to download the application.</p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top: 0; font-size: 26px;">🆘 Getting Help</h2>
+    <p style="margin: 0 0 14px;">
+      If something does not look right, open an issue on the repository and describe what you saw. Include the version of spaceguard you are using and what your menu bar showed at the time — that is usually enough to work out what happened.
+    </p>
+    <p style="margin: 0;">
+      Feature ideas are welcome too. If there is a type of clutter spaceguard should learn to clean, say so.
+    </p>
+  </section>
+
+  <footer style="text-align: center; padding: 26px 10px 0; color: #6b7280; font-size: 14px;">
+    <p style="margin: 0 0 12px;">
+      <a href="https://github.com/Konnuyu/spaceguard/releases"
+         style="display: inline-block; padding: 13px 28px; border-radius: 999px; background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%); color: #ffffff; font-weight: 700; text-decoration: none; box-shadow: 0 6px 16px rgba(79, 70, 229, 0.28);">
+        ⬇️ Open the download page
+      </a>
+    </p>
+    <p style="margin: 0;">spaceguard · a menu-bar app for macOS · built with Swift and SwiftUI</p>
+  </footer>
+
+</div>
 </body>
 </html>
