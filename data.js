@@ -10,16 +10,16 @@ const WHATS_NEW = [
 // studio の作品・リンク集（アプリ、動画、note記事など）
 const STUDIO_ITEMS = [
   {
-    title: "ウェブシンセ（ブラウザで鳴るアプリ）",
-    desc: "生成AIに指示して作った、ブラウザでそのまま弾けるシンセ。無料・非公式のファンメイドです。",
+    title: "機材や本やWebアプリなどの紹介",
+    desc: "機材や本屋やWebアプリなどの紹介をしてます。",
     url: "#",           // ← 公開したらアプリのURLに差し替える
-    tag: "web app",
+    tag: "youtube/Webアプリなど",
   },
   {
-    title: "開発日誌（note）",
-    desc: "コードを書かずにAIへ指示して楽器を作った記録。",
+    title: "note",
+    desc: "機材や本についての話やWebアプリの開発記録など",
     url: "#",           // ← 公開したらnote記事のURLに差し替える
-    tag: "note",
+    tag: "noteなど",
   },
 ];
 
@@ -27,7 +27,7 @@ const STUDIO_ITEMS = [
 const SHARE_ITEMS = [
   {
     title: "紹介はこれから",
-    desc: "いろんな人の機材棚と本棚を紹介していくページです。あなたの棚も募集中。",
+    desc: "いろんな人の棚を紹介していくページです。あなたの棚も募集中。",
     url: "#",
     tag: "coming soon",
   },
