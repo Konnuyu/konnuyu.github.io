@@ -17,7 +17,7 @@ const STUDIO_ITEMS = [
   },
   {
     title: "note",
-    desc: "機材や本についての話やWebアプリの開発記録など",
+    desc: "機材や本についての話やWebアプリの開発記録など。",
     url: "#",           // ← 公開したらnote記事のURLに差し替える
     tag: "noteなど",
   },
