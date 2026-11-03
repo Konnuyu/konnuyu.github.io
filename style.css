@@ -1,0 +1,26 @@
+:root { --bg:#101216; --panel:#181b21; --text:#e8eaee; --sub:#9aa3b2; --line:#262b34; --accent:#d8ff3d; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.7; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+header { border-bottom:1px solid var(--line); padding:20px 24px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+header .logo { height:36px; }
+header .name { font-size:22px; font-weight:700; letter-spacing:.04em; }
+nav { margin-left:auto; display:flex; gap:18px; }
+nav a { color:var(--text); font-size:14px; }
+main { max-width:860px; margin:0 auto; padding:32px 24px 64px; }
+h1 { font-size:28px; margin:8px 0 4px; }
+h2 { font-size:19px; margin:40px 0 12px; border-left:4px solid var(--accent); padding-left:10px; }
+.lead { color:var(--sub); }
+.banner { width:100%; border-radius:10px; margin:16px 0 8px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px; }
+.card .tag { display:inline-block; font-size:11px; color:#101216; background:var(--accent); border-radius:99px; padding:1px 9px; margin-bottom:8px; font-weight:700; }
+.card h3 { margin:0 0 6px; font-size:16px; }
+.card p { margin:0; color:var(--sub); font-size:14px; }
+ul.news { list-style:none; padding:0; margin:0; }
+ul.news li { padding:9px 2px; border-bottom:1px solid var(--line); font-size:14px; }
+ul.news .date { color:var(--sub); margin-right:10px; font-variant-numeric:tabular-nums; }
+ul.news .label { display:inline-block; font-size:11px; border:1px solid var(--line); border-radius:99px; padding:0 8px; margin-right:8px; color:var(--sub); }
+.note { color:var(--sub); font-size:13px; margin-top:40px; border-top:1px solid var(--line); padding-top:16px; }
+footer { border-top:1px solid var(--line); color:var(--sub); font-size:12px; padding:18px 24px; text-align:center; }
